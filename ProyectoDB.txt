@@ -1,0 +1,15 @@
+CREATE DATABASE Proyecto
+GO
+USE Proyecto
+GO
+CREATE TABLE Empleado(
+IdEmpleado int IDENTITY PRIMARY KEY,
+Nombre varchar(25) NOT NULL,
+Apellido varchar(25) NOT NULL,
+FechaNacimiento dateTime NOT NULL,
+Documento varchar(25) NOT NULL,
+Contacto varchar(25) NOT NULL,
+Correo varchar(50) NOT NULL,
+Direccion varchar(100) NOT NULL,
+Estado bit NOT NULL
+);
